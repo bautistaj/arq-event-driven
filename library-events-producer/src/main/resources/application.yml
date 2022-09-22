@@ -1,0 +1,14 @@
+spring:
+    profiles:
+      active: local
+---
+spring:
+  profiles: local
+  kafka:
+    producer:
+      bootstrap-servers:
+        - localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured
+      key-serializer:
+        - org.apache.kafka.common.serialization.LongSerializer # The id of the objects
+      values-serializer:
+        - org.apache.kafka.common.serialization.StringSerializer # Payload of the messages will be string format

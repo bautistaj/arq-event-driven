@@ -87,7 +87,17 @@ cd kafka_2.12-3.2.1/bin
 ## Describe topic
 
 
+# Implementation with With Spring boot
 
+KafkaTemplate
+    key.serializer
+    value.serializer
+Partitioner
+    DefaultPartitioner
+REcord Accomulator
+    RecordBatch
+    RecordBatch
+    RecordBatch
 
 
 
