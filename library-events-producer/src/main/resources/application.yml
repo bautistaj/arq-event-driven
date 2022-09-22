@@ -12,3 +12,7 @@ spring:
         - org.apache.kafka.common.serialization.LongSerializer # The id of the objects
       values-serializer:
         - org.apache.kafka.common.serialization.StringSerializer # Payload of the messages will be string format
+      admin:
+        properties:
+          bootstrap.servers:
+            - localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured

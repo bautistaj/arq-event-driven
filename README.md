@@ -60,7 +60,7 @@ cd kafka_2.12-3.2.1/bin
 ## List the topics in a cluster
 
 ```
-./kafka-topics.sh --zookeeper localhost:2181 --list
+./kafka-topics.sh --bootstrap-server localhost:9092 --list
 ```
 
 ## How to view consumer groups

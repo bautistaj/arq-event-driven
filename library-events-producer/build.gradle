@@ -24,6 +24,9 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//Kafka
+	implementation('org.springframework.kafka:spring-kafka')
 }
 
 tasks.named('test') {

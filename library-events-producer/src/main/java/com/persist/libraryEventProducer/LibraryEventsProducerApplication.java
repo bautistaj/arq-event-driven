@@ -1,4 +1,4 @@
-package com.persist;
+package com.persist.libraryEventProducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
