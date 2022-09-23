@@ -1,4 +1,4 @@
-package com.persist.libraryEventProducer.domain;
+package com.persist.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

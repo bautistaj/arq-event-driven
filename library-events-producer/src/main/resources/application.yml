@@ -5,14 +5,12 @@ spring:
 spring:
   profiles: local
   kafka:
+    template:
+      default-topic: library-events # Configure the default topic
     producer:
-      bootstrap-servers:
-        - localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured
-      key-serializer:
-        - org.apache.kafka.common.serialization.LongSerializer # The id of the objects
-      values-serializer:
-        - org.apache.kafka.common.serialization.StringSerializer # Payload of the messages will be string format
+      bootstrap-servers: localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer # The id of the objects
+      values-serializer: org.apache.kafka.common.serialization.StringSerializer # Payload of the messages will be string format
       admin:
         properties:
-          bootstrap.servers:
-            - localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured
+          bootstrap.servers: localhost:9092, localhost:9093, localhost:9094 # Cloister of kafka configured

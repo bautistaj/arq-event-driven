@@ -1,4 +1,4 @@
-package com.persist.libraryEventProducer.domain;
+package com.persist.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class LibraryEvent {
     private Long libraryEventId;
-
+    private Book book;
 }
