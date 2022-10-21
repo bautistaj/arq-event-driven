@@ -22,8 +22,8 @@ public class LibraryEventController {
     public ResponseEntity<?> libraryEvent(@RequestBody LibraryEvent libraryEvent) throws JsonProcessingException {
 
         log.info("Before event");
-        SendResult<Long, String> sendResult = this.libraryEventProducer.sendLibraryEventSynchronous(libraryEvent);
-        log.info("After event {} ", sendResult);
+        this.libraryEventProducer.sendLibraryEventV2(libraryEvent);
+
         return ResponseEntity.status(HttpStatus.CREATED).body(libraryEvent);
     }
 }
